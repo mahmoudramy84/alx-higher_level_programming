@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
         try:
             print(f"{mylist[i]}", end="")
             count += 1
-        except Exception:
+        except IndexError:
             braek
     print()
     return(count)
