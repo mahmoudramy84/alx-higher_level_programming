@@ -69,6 +69,7 @@ class Rectangle:
         """return string representation of rectangle"""
         x = "Rectangle(" + str(self.__width) + ', ' + str(self.__height) + ')'
         return x
+
     def __del__(self):
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
