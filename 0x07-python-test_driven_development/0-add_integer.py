@@ -3,15 +3,15 @@
 
 
 def add_integer(a, b=98):
-    """
-    function that returns an integer
+    """function that returns an integer
     args:
         a (int or float): first param
         b (int or float): second param
     Returns: 
         the addition of a and b
     Raisees:
-    TypeError with message if a and b isn,t integers or floats
+    TypeError with message if a and
+    b isn,t integers or floats
     """
     if type(a) not in [int, float]:
         raise TypeError ("a must be an integer")

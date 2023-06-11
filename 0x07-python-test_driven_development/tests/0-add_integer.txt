@@ -1,10 +1,4 @@
 A test to for the add_integer function
-========================================
-
-The 0-add_integer module takes two integers or floats as arguments and returns their sum
-
-Usage
-=====
 
 Import the module
 >>> import sys
@@ -72,3 +66,4 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
