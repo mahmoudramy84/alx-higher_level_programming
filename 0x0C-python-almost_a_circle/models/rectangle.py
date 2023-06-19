@@ -11,8 +11,8 @@ class Rectangle(Base):
         """Initializes attributes of the object"""
         self.width = width
         self.height = height
-        self.__x = x
-        self.__y = y
+        self.x = x
+        self.y = y
         super().__init__(id)
     
     # getter methods
@@ -83,21 +83,21 @@ class Rectangle(Base):
 
     def area(self):
         """Defines the area value of the Rectangle"""
-        return (self.__width * self.__height)
+        return (self.width * self.height)
     
     def display(self):
         """Display the Rectangle with the character #"""
-        for row in range(self.__height):
+        for row in range(self.height):
             for x in range(self.x):
                 print(" ", end="")
-            for column in range(self.__width):
+            for column in range(self.width):
                 print("#", end="")
             print()
 
     def __str__(self):
         """Defines a format for the string representation of the class"""
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
-{self.__width}/{self.__height}")
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - \
+{self.width}/{self.height}")
     
 
 
