@@ -9,5 +9,5 @@ const num2 = parseInt(argument2);
 if (!isNaN(num1) && !isNaN(num2)) {
   console.log(num1 + num2);
 } else {
-  console.log('Please provide two valid integer arguments.');
+  console.log('NaN');
 }
