@@ -1,1 +1,0 @@
-0x0F-python-object_relational_mapping tasks directory solutions for ALX software enginnering program
