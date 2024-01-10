@@ -5,9 +5,9 @@ if (parseInt(x)) {
     let square = '';
     for (let colm = 0; colm < x; colm++) {
       square += 'X';
-   }
+    }
     console.log(square);
   }
 } else {
-    console.log('Missing size');
+  console.log('Missing size');
 }
