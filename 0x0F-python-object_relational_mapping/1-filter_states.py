@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" Write a script that lists all states from the database hbtn_0e_0_usa:
-
+""" Write a script that lists all states with a name starting
+with N (upper N) from the database hbtn_0e_0_usa:
 Your script should take 3 arguments: mysql username,
-mysql password and database name (no argument validation needed)
+ mysql password and database name (no argument validation needed)
 You must use the module MySQLdb (import MySQLdb)
 Your script should connect to a MySQL server running on localhost at port 3306
 Results must be sorted in ascending order by states.id
@@ -17,8 +17,8 @@ if __name__ == '__main__':
         host="localhost", user=argv[1], port=3306, passwd=argv[2], db=argv[3])
 
     cursor = db.cursor()
-
-    cursor.execute("SELECT * FROM states")
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' \
+                ORDER BY states.id ASC")
 
     rows = cursor.fetchall()
 
