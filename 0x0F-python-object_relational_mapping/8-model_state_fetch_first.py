@@ -2,7 +2,7 @@
 """ prints the first State object from the database hbtn_0e_6_usa
 """
 import sys
-from model_state import State, Base
+from model_state import Base, State
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
@@ -15,4 +15,4 @@ if __name__ == "__main__":
     session = session_maker()
 
     state = session.query(State).order_by(State.id).first()
-    print("Nothinf" if state is None else f"{state.id}: {state.name}")
+    print("Nothing" if state is None else f"{state.id}: {state.name}")
